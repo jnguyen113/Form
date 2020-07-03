@@ -6,21 +6,52 @@
 
 h1{
   text-align: center;
-  color: lightseagreen;
+  color: lightgrey;
+  font-weight: bold;
 }
-body{
-  margin-top: 10%;
+.create-account{
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  background-color: #d3d0d0
+  font-weight: bold;
+  font-size: 24px;
+  color: #395870;
 }
+html{
+  background: url(https://images.unsplash.com/photo-1500993855538-c6a99f437aa7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 400px) {
+  html {
+    background: url(https://images.unsplash.com/photo-1500993855538-c6a99f437aa7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+#container{
+  margin-top: 3%;
+  opacity: .75;
+  border: 5px solid grey;
+  border-radius: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #d3d0d0;
+  width: 400px;
+  height: 600px;
+}
+
+
 form {
+  text-align: center;
   background-color:#f2f2f2;
   border: 1px solid #c6c7cc;
   border-radius: 5px;
   font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden;
   width: 400px;
-  display: inline-block;
+  
 }
 
 fieldset {
@@ -60,21 +91,35 @@ input {
   margin-top: 6px;
   width: 100%;
 }
-.create {
-  background: #f0f0f2;
-  border-top: 1px solid #c6c7cc;
-  padding: 20px;
+
+#country{
+  width: 100% ;
+  height: auto;
 }
-.create .button {
-  background:#67b2f0;
-  border: 0;
-  color: #fff;
-  cursor: pointer;
-  padding: 8px 16px;
-}
+
 .create label {
   color: #7c7c80;
   font-size: 12px;
   float: left;
   margin: 10px 0 0 20px;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+select{
+  text-align-last:center;
+  margin-bottom: 2%
+}
+
+button{
+  margin-top: 7%;
+  font-size: 20px;
+  background:#67b2f0;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px;
 }
